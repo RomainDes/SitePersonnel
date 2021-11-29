@@ -1,0 +1,6 @@
+Idées d'amélioration : 
+- Finir la page Votre_Avis (meilleur design)
+- Réparer les translations de la page Me_Contacter
+- Avoir un vrai bouton qui coulisse pour changer le template sur la page d'Accueil
+- Bouger ma PP sur la page d'Accueil selon la position de la souris
+- Mettre en place un DataBase qui récupère les Avis et envoie un mail directement lorsque l'Avis a été envoyé

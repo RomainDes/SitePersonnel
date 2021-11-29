@@ -1,0 +1,189 @@
+main{
+    z-index: 2;
+    width: 100%;
+    background: #fbfbfb/* url(../images/logoRDopacity2.png) no-repeat scroll center*/;
+    background-size: auto 100%;
+    padding: 0 5% 0 5%;
+    margin: 17px auto;
+    grid-area: main;
+    bottom: 28px;
+    position: relative; 
+    box-sizing: border-box;
+    top: 35px;
+}
+
+
+
+
+body > h1{
+    margin-top:20px;
+    text-align: center;
+}
+
+.grid{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.entry{
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin:  0 3px 15px 0;
+    flex-basis: 22%;
+    height: 400px;
+    transition-duration: 1s;
+    display: grid;
+    grid-template: "titre_res" 200px "reseaux" 200px;
+}
+
+.reseaux{
+    grid-area: reseaux;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry:hover{
+    grid-template: "titre_res" 350px "reseaux" 50px;
+    transition-duration: 1s;
+}
+
+
+
+.insta, .linkedin, .facebook, .github{
+    width: 100%;
+    box-shadow: 0px 8px 21px 0 rgba(51,62,72,.1),0 4px 4px 0 rgba(51,62,72,.1);
+}
+
+.insta{
+    background: white url(../images/fiche_insta.png) no-repeat scroll center;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
+.linkedin{
+    background: white url(../images/fiche_linkedin.png) no-repeat scroll center;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
+.facebook{
+    background: white url(../images/fiche_facebook.png) no-repeat scroll center;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
+.github{
+    background: white url(../images/fiche_github.png) no-repeat scroll center;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
+
+img{
+    height: 100px;
+    text-align: center;
+    padding: 54px 25% 246px 25%;
+    transition-duration: 1s;
+    z-index: 1;
+}
+
+img:hover{
+    height: 150px;
+    text-align: center;
+    padding: 103px 0 147px 0;
+    transition-duration: 1s;
+
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+}
+
+.grid2 h1{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    font-size: 2em;
+    padding: 9px 0 12px 0;
+    border-bottom: 1px solid black;
+}
+
+.grid2{
+    display: flex;
+    justify-content: space-between;
+    margin: 39px 0 39px 0;
+    transition-duration: 1s;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    
+}
+
+.entry2{
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin: 25px 0 25px 0;
+    transition-duration: 1s;
+    display: grid;
+    grid-template: "titre_res" 100px "reseaux" 100px;
+    height: 200px;
+    flex-basis: 48%;
+}
+
+.entry2:hover{
+    grid-template: "titre_res" 200px "reseaux" 20px;
+    transition-duration: 1s;  
+}
+
+.entry2 h2{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+
+.linux{
+    background: white url(../images/fiche_linux.jpg) no-repeat scroll center;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
+.javascript{
+    background: white url(../images/fiche_javascript.jpg) no-repeat scroll center;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
+.entry2 img{
+    padding:0;
+}
+   
+
+@media(max-width: 975px){
+    .entry{
+        flex-basis: 48%;
+    }
+
+}
+
+@media(max-width: 490px){
+    .entry, .entry2{
+        flex-basis: 98%;
+    } 
+}
+
+
+@media(max-width: 326px){
+    .grid, .grid2{
+        width: 270px;
+    } 
+
+}

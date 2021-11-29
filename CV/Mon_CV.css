@@ -1,0 +1,318 @@
+body > * {
+    padding: 0px;
+  }
+  
+
+main{
+
+    grid-area: main;
+    display: grid;
+    grid-template: "PP header_CV" "sidebar_CV main_CV" "sidebar_CV main_CV" / 2fr 5fr;
+}
+
+.PP{
+    background-color: #7f95a7;
+    width: 100%;
+    padding: 0 15% 0 15%;
+    grid-area: PP;
+    box-sizing: border-box;
+    
+}
+
+#PP{
+    position: relative;
+    top: 60px;
+    width: 100%;
+}
+
+.header_CV{
+    background-color: #7f95a7;
+    grid-area: header_CV;
+    grid-template: "PP identité" / 2fr 5fr;
+
+}
+
+
+
+.identité{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    grid-area: identité;
+    margin: 0;
+    padding: 7% 10% 0 4%;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: 'Jockey One', sans-serif;
+    margin:0;
+    font-weight: 500;
+    font-size: 37.45px;
+}
+
+h4{
+    margin:0;
+    padding: 20px 0 25px 0;
+    border-bottom: 2px solid whitesmoke;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 3px;
+
+}
+
+#DLpdf{
+    width: 34px;
+    height: 46px;
+    background: url('../images/DLpdf.png') no-repeat scroll center;
+    background-size: auto 100%;
+    position: absolute;
+    left: 5px;
+    z-index: 1;
+    transition-duration: 0.6s;
+}
+
+#DLpdf:hover{
+    width: 60px;
+    transition-duration: 0.6s;
+}
+
+.sidebar_CV{
+    background-color: #fbfbfb;
+    grid-area: sidebar_CV;
+    padding: 30% 0 0 0;
+    display: grid;
+}
+
+.profil, .compétences, .loisirs{
+    width:100%;
+    padding: 0 15% 10px 15%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.profil > div{
+    width: 100%;
+    height: 94%;
+    padding: 10px 30px 10px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: "icone adresse" "icone email" "icone telephone" "icone datedenaissance" "icone permis" / 10% 90%;
+}
+
+.icone{
+    grid-area: icone;
+    height: 100%;
+}
+
+.adresse{
+    grid-area: adresse;
+}
+
+.email{
+    grid-area: email;
+}
+
+.telephone{
+    grid-area: telephone;
+}
+
+.datedenaissance{
+    grid-area: datedenaissance;
+}
+
+.permis{
+    grid-area: permis;
+}
+
+.profil h5, .main_CV h4{
+    text-align: left;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: gray;
+    font-weight: lighter;
+    font-style: italic;
+    left: 20px;
+    position: relative;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.profil h4{
+    padding: 0;
+    left: -6%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 0.8em;
+    border: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+.image1, .image2, .image3, .image4, .image5{
+    width:10%;
+    position: relative;
+    top: 21.5px;
+    right: 57%;
+}
+
+.image4{
+    top: 30px;
+}
+
+.compétences h4, .loisirs h4 {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    border: none;
+    text-align: left;
+    padding: 5px 0 5px 0;
+    left: 20px;
+    position: relative;
+}
+
+main h3{
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    margin:0;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+}
+
+.compétences h3, .loisirs h3{
+    margin-bottom: 15px;
+}
+
+.main_CV{
+    background-color: #fbfbfb;
+    grid-area: main_CV;
+    padding: 12% 0 20px 0;
+    display: grid;
+    
+
+}
+
+.exp_prof, .formations{
+    width:100%;
+    padding: 0 6% 20px 6%;
+    box-sizing: border-box;
+    border-left: 2px solid black;
+    display: grid;
+    grid-template: "titremain_CV titremain_CV" 30px "dates exemples" / 1fr 3fr;
+}
+
+
+.dates{
+    grid-area: dates;
+    height: 100%;
+    text-align: left;
+    padding-left: 40px;
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.exemples{
+    grid-area: exemples; 
+    height: 100%;
+    display: grid;
+    align-items: center;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.logo_exp{
+    height: 53px;
+    transition-duration: 0.5s;
+}
+
+.logo_exp:hover{
+    height: 63px;
+    transition-duration: 0.5s;
+}
+
+.main_CV h3{
+    text-align: center;
+    margin-left: 40px;
+    letter-spacing: 2.5px;
+    grid-area: titremain_CV;
+}
+
+.main_CV h4{
+    left: 0;
+    padding-right: 10px;
+    border: none;
+    border-right: 0.5px solid black;
+}
+.exemples h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.exemples h4{
+    border:none;
+    padding: 0;
+    text-align: center;
+    font-size: 75%;
+    bottom: 31px;
+
+}
+
+
+
+.image6, .image7{
+    width: 30px;
+    position: relative;
+    float: left;
+    bottom: 5px;
+    right: 49px;
+}
+
+footer{
+	background-color:  #fbfbfb;
+	grid-area: footer;
+}
+
+
+@media(max-width: 724px)
+{
+    .main_CV{
+        padding-top: 62.5px;
+    }
+    .profil h5{
+        left: 0;
+        font-size: 60%;
+    }
+}
+
+@media(max-width: 650px)
+{
+    .main_CV h3{
+        letter-spacing: 0px;
+    }
+}
+
+@media(max-width: 628px)
+{
+    .identité h4{
+        border: none;
+    }
+}
+
+@media(max-width: 560px)
+{
+    .main_CV h3{
+        font-size:62%;
+    }
+}
+
+
+
+
+
+

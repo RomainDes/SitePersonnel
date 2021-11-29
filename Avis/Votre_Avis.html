@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Votre avis</title>
+	<link rel="stylesheet" type="text/css" href="Votre_Avis.css">
+	<link rel="stylesheet" type="text/css" href="first.css" title="first" />
+	<link href="alternative.css" rel="alternate stylesheet" title="alternative" type="text/css" disabled="">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Jockey+One&family=Timmana&display=swap" rel="stylesheet"> 
+	<script src="../script/style.js"></script>
+</head>
+<body>
+
+	<header>
+		<aside class="menu">
+			<ul >
+				<li><a href="../index.html"> Accueil </a></li>
+				<li><a href="../CV/Mon_CV.html" > CV </a></li>
+				<li  id="page"><a href="#"> Contact </a></li>
+				<li><a href="../Contacter/Me_contacter.html"> Liens </a></li>
+			</ul>
+		</aside>
+		<h1> CONTACT </h1>
+	</header>
+	<main>
+		<!-- REBUILD DE LA PAGE EN COURS
+		<form onsubmit="return verif()" action="#">
+			<div class="flexrow">
+				<input type="text" id="prenom" onclick="init_champ('prenom')">
+				<label class="label" for="prenom">Prénom</label>
+				<label class="label" for="genre">Genre</label>
+				<select id="genre">
+					<option>Homme</option>
+					<option selected>Femme</option>
+					<option>Non binaire</option>
+				</select>
+			</div>
+			<div class="flexrow">
+				<div  class="flex">
+					<input type="text" id="nom" onclick="init_champ('nom')">
+					<label class="label" for="nom">Nom</label>
+				</div>
+				<div  class="flex">
+					<input type="text" id="date" placeholder="jj/mm/aaaa" onclick="init_champ('date')">
+					<label class="label" for="date">Date de naissance</label>
+				</div>
+			</div>
+			<div  class="flex">
+				<input type="text" id="mail" placeholder="exemple@autre.xx" onclick="init_champ('mail')">
+				<label class="label" for="mail">Adresse Email</label>
+			</div>
+			<div  class="flex">
+			<textarea name="demande" id="com" rows="4" cols="48" maxlength="128" placeholder="Avis :"></textarea>
+			</div>
+			<div class="flexrow">
+				<div  class="flex">
+					<input type="checkbox" id="poly" checked>
+				    <label for="poly">Vous êtes étudiant à polytech </label>
+				</div>
+			    <div  class="flex">
+			    	<input type="checkbox" id="email">
+					<label for="email">Recevez un email de confirmation</label>
+				</div>
+			</div>
+			<div class="flex">
+	        	<input type="submit" value="Valider votre avis" required id="validation" >
+	        </div>
+		</form> -->
+		<form onsubmit="return verif()" action="#">
+			<div class="identité">
+							<p> Genre  <br>
+								<select>
+									<option>Homme</option>
+									<option selected>Femme</option>
+									<option>Non binaire</option>
+								</select>
+							</p>
+							<p>Prénom <br> <input type="text" id="prenom" onclick="init_champ('prenom')"></p>
+							<p>Nom <br> <input type="text" id="nom" onclick="init_champ('nom')"></p>
+							<p>Date de naissance <br> <input type="text" id="date" placeholder="jj/mm/aaaa" onclick="init_champ('date')"></p>
+							<p>Adresse email <br> <input type="text" id="mail" placeholder="exemple@autre.xx" onclick="init_champ('mail')"></p>
+							<!-- <p>Téléphone <br> <input type="text" id="telephone" placeholder="00 00 00 00 00"></p> -->
+			</div>
+			<div class="commentaire">
+				<textarea name="demande" id="com" rows="4" cols="48" maxlength="128" placeholder="Avis :"></textarea>
+				<div>
+					<input type="checkbox" id="email" checked>
+		            <label for="email">Recevoir des emails sur les mises à jour du site</label>
+		            <br>
+		            <input type="checkbox" id="email">
+		            <label for="email">Acceptez les modalités de confidentialité</label>
+	        	</div>
+				<input type="submit" value="Valider votre avis" required id="validation" >
+			</div>
+		</form>
+	</main>
+</body>
+</html>

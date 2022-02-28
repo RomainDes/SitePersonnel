@@ -162,6 +162,12 @@ h2{
     grid-area: titre_res;
 }
 
+.projet{
+    background: grey;
+    background-size: cover;
+    grid-area: titre_res;
+}
+
 .entry2 img{
     padding:0;
 }
